@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechStore - Sua Loja de Tecnologia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="#">TechStore</a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Produtos</a></li>
+          <li><a href="#">Categorias</a></li>
+          <li><a href="#">Ofertas</a></li>
+          <li><a href="#">Contato</a></li>
+          <li><a href="#"><i class="fas fa-shopping-cart"></i> Carrinho (0)</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-content">
+        <h1>As Melhores Ofertas em Tecnologia Você Encontra Aqui!</h1>
+        <p>Smartphones, notebooks, acessórios e muito mais com os melhores preços.</p>
+        <a href="#" class="button primary">Ver Produtos</a>
+      </div>
+    </section>
+
+    <section class="featured-products">
+      <h2>Nossos Produtos Destacados</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="smartphone.jpg" alt="Smartphone">
+          <div class="product-info">
+            <h3 class="product-title">Smartphone X</h3>
+            <p class="product-price">R$ 1200,00</p>
+            <button class="buy-button" data-product="smartphone_x">Comprar</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="notebook.jpg" alt="Notebook">
+          <div class="product-info">
+            <h3 class="product-title">Notebook Pro</h3>
+            <p class="product-price">R$ 2500,00</p>
+            <button class="buy-button" data-product="notebook_pro">Comprar</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="fones.jpg" alt="Fones de Ouvido">
+          <div class="product-info">
+            <h3 class="product-title">Fones Sem Fio Y</h3>
+            <p class="product-price">R$ 250,00</p>
+            <button class="buy-button" data-product="fones_y">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 TechStore. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.buy-button').forEach(button => {
+      button.addEventListener('click', function() {
+        window.location.href = 'pagamento.html';
+      });
+    });
+  </script>
+  <script src="https://kit.fontawesome.com/your_fontawesome_kit.js" crossorigin="anonymous"></script>
+</body>
+</html>
